@@ -1,0 +1,30 @@
+package firstJavaProject;
+import java.util.Scanner;
+
+public class Activity6 {
+	public static double circle(int cir) {
+		return cir * 3.14;
+	}
+	public static double ractangle(int rec1, int rec2) {
+		return rec1 * rec2;
+	}
+	public static double triangle(int tri1, int tri2) {
+		return  tri1 * tri2 / 2;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("원의 반지름을 입력세요 : ");
+		int cir = scan.nextInt(); 
+
+		System.out.printf("반지름이 %d인 원의 넓이: %.1f", cir, Activity6.circle(cir)).println();
+		
+		scan.close();
+
+	}
+
+}
+
+
+		

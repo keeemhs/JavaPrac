@@ -1,0 +1,33 @@
+package java_class;
+
+public class Car {
+	// 멤버 변수
+	private int speed;
+	
+	// 생성자
+	// 클래스명과 동일해야 함
+	public Car(int speed) {
+		
+	}
+	
+	public void start() {
+		System.out.println("Car Start");
+	}
+	
+	public void increaseSpeed(int speed) {
+		this.speed = this.speed + speed;
+	}
+
+	// setter메소드
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	
+	
+	// getter 메소드
+	public int getSpeed() {
+		return this.speed;
+	}
+	
+	
+}

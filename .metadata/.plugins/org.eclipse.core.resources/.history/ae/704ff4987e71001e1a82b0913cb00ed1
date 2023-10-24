@@ -1,0 +1,56 @@
+package firstJavaProject;
+import java.util.*;
+
+public class ArrayListEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> list = new ArrayList<>();
+		
+		// add(element): ArrayList 맨 뒤에 element 추가
+		list.add("Google");
+		System.out.println(list);
+		
+		// add(index, element): index 위치에 element 삽입
+		list.add(0, "Amazon");
+		System.out.println(list);
+		
+		// addAll: ArrayList 뒤에 ArrayList 추가
+		ArrayList<String> list2 = new ArrayList<>();
+		list2.add("Samsung");
+		list2.add("Apple");
+		System.out.println(list2);
+		list.addAll(list2);
+		System.out.println(list);
+		
+		// size: ArrayList의 길이 리턴
+		System.out.println(list.size());
+		
+		// contains(params): index에 해당하는 요소 리
+		System.out.println(list.contains("Apple"));
+		
+		// get(index): index에 해당하는 요소 리턴
+		System.out.println(list.get(1));
+		
+		// get(index, element): 
+		System.out.println(list.set(3, "Hyundai"));
+		System.out.println(list);
+		
+		// indexOf(params): params와 같은 첫 번째 요소의 index 리턴, 없으면 -1 리턴
+		System.out.println(list.indexOf("Google"));
+		
+		// isEmpty(): ArrayList가 비어있는지 확인 (빈 배열이면 true)
+		System.out.println(list.isEmpty());
+		
+		// remove(index)
+		list.remove(3);
+		System.out.println(list);
+		
+		// clear()
+		list.clear();
+		System.out.println(list);
+		System.out.println(list.isEmpty());
+		
+	}
+
+}

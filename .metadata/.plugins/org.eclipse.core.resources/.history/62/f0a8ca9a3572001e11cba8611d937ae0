@@ -1,0 +1,17 @@
+package java_class;
+import java.util.*;
+
+public class Activity1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Rectangle square = new Rectangle();
+		
+		square.setWidth(10);
+		square.setHeight(5);
+		
+		System.out.println(square.getArea());
+		
+		
+	}
+}

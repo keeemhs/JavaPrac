@@ -1,0 +1,12 @@
+package java_class;
+import java.util.*;
+
+public class Activity1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Rectangle width = new Rectangle();
+		Rectangle height = new Rectangle();
+		
+	}
+}

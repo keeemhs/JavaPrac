@@ -1,0 +1,14 @@
+package java_class;
+
+public class Rectangle {
+	private int width;
+	private int height;
+
+	// setter
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	
+	// getter
+	public void getArea
+}

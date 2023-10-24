@@ -1,0 +1,18 @@
+package firstJavaProject;
+import java.util.*;
+
+public class Activity10 {
+	public static void main(String[] args) {
+		int[] arr = new int[5];
+		
+		try {
+			for(int i = 1; i <= 5; i++) {
+				arr[i] = i;
+				System.out.println(arr[i]);
+			}
+		}
+		catch (ArithmeticException e) {
+			System.out.println("인덱스가 범위를 벗어났습니다.");
+		}
+	}
+}

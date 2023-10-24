@@ -1,0 +1,36 @@
+package firstJavaProject;
+import java.util.Scanner;
+
+public class Activity6 {
+	public static double circle(int cir) {
+		return cir * Math.PI;
+	}
+	public static double ractangle(int rec1, int rec2) {
+		return rec1 * rec2;
+	}
+	public static double triangle(int tri1, int tri2) {
+		return  tri1 * tri2 / 2;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("원의 반지름, 직사각형의 두 변의 길이, 삼각형의 밑변과 높이를 입력세요 : ");
+		int cir = scan.nextInt(); 
+		int rec1 = scan.nextInt();
+		int rec2 = scan.nextInt();
+		int tri1 = scan.nextInt();
+		int tri2 = scan.nextInt();
+
+		System.out.printf("반지름이 %d인 원의 넓이: %.14f", cir, Activity6.circle(cir)).println();
+		System.out.printf("가로 %d, 세로 %d인 직사각형의 넓이: %.1f", rec1, rec2, Activity6.ractangle(rec1, rec2)).println();
+		System.out.printf("밑변 %d, 높이 %d인 삼각형의 넓이: %.1f", tri1, tri2, Activity6.triangle(tri1, tri2)).println();
+		
+		scan.close();
+
+	}
+
+}
+
+
+		

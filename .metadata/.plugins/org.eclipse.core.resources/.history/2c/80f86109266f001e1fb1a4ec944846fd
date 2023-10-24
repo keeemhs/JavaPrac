@@ -1,0 +1,34 @@
+package firstJavaProject;
+import java.util.Scanner;
+
+public class Activity5 {
+	public static double sum(int num1, int num2) {
+		return num1 + num2;
+	}
+	public static double sub(int num1, int num2) {
+		return num1 - num2;
+	}
+	public static double mul(int num1, int num2) {
+		return num1 * num2;
+	}
+	public static float div(int num1, int num2) {
+		return num1 / num2;
+	}
+
+	public static void main(String[] args) {
+		Activity5 calc = new Activity5();
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자 두 개를 입력하세요");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt(); 
+
+		System.out.printf("덧셈 결과 : %.1f", Activity5.sum(num1, num2)).println();
+		System.out.printf("뺄셈 결과 : %.1f" + Activity5.sub(num1, num2).println();
+		System.out.printf("나눗셈 결과 : " + Activity5.div(num1, num2)).println();
+		System.out.printf("곱셈 결과 : %.1f" + Activity5.mul(num1, num2)).println();
+		
+		scan.close();
+	}
+
+}

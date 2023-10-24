@@ -1,0 +1,11 @@
+package firstJavaProject;
+
+public class Scanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("이름, 나이, 키, 결혼 여부를 빈칸으로 입력하세요.");
+
+	}
+
+}

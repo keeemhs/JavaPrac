@@ -1,0 +1,20 @@
+package firstJavaProject;
+import java.util.ArrayList;
+
+public class ArrayListEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> list = new ArrayList<>();
+		
+		// add(element)
+		list.add("Google");
+		System.out.println(list);
+		// add(index, element)
+		list.add(0, "Amazon");
+		System.out.println(list);
+		// addAll
+		
+	}
+
+}

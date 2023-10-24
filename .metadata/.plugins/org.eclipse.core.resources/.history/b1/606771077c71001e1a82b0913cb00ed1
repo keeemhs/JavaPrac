@@ -1,0 +1,47 @@
+package firstJavaProject;
+import java.util.*;
+
+public class ArrayListEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> list = new ArrayList<>();
+		
+		// add(element): 더하기
+		list.add("Google");
+		System.out.println(list);
+		
+		// add(index, element): 특정 위치에 추가하기
+		list.add(0, "Amazon");
+		System.out.println(list);
+		
+		// addAll: 특정 그대로 뒤에 합치기
+		ArrayList<String> list2 = new ArrayList<>();
+		list2.add("Samsung");
+		list2.add("Apple");
+		System.out.println(list2);
+		list.addAll(list2);
+		System.out.println(list);
+		
+		// size: 크기 확인
+		System.out.println(list.size());
+		
+		// contains(params): 존재 여부
+		System.out.println(list.contains("Apple"));
+		
+		// get(index)
+		System.out.println(list.get(1));
+		
+		// get(index, element): 특정한 위치에 있는 값 교체
+		System.out.println(list.set(3, "Hyundai"));
+		System.out.println(list);
+		
+		// indexOf(params)
+		System.out.println(list.indexOf("Google"));
+		
+		// isEmpty(): ArrayList가 비어있는지 확인 (빈 배열이면 true)
+		System.out.println(list.isEmpty());
+		
+	}
+
+}

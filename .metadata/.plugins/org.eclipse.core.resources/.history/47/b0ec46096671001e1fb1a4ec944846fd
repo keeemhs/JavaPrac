@@ -1,0 +1,28 @@
+package firstJavaProject;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Activity9 {
+	public static void main(String[] args) {
+		ArrayList<String> stringList = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        
+        while (true) {
+            String input = scanner.nextLine();
+            System.out.println("문자열을 입력하세요. : ");    
+            if (input.equals("exit")) {
+                break;
+            } else {
+                stringList.add(input);
+            }
+        }
+        
+        for (String str : stringList) {
+            System.out.println(str);
+        }
+        
+        scanner.close();
+		
+	}
+
+}

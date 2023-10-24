@@ -1,0 +1,18 @@
+package firstJavaProject;
+import java.util.Scanner;
+
+public class Activity5 {
+	public static double sum(int num1, int num2) {
+		return num1 + num2;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자 두 개를 입력하세요");
+		int num1 = Scanner.next();   // 공백 이전까지의 문자열 읽기
+		int num2 = Scanner.nextInt(); 
+
+	}
+
+}
