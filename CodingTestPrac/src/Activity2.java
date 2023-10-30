@@ -21,10 +21,7 @@ public class Activity2 {
         int target2 = 6;
         int[] result2 = findIndices(nums2, target2);
         
-        if (result2 != null) {
-            System.out.println("[" + result2[0] + ", " + result2[1] + "]");
-        } else {
-            System.out.println("해답이 존재하지 않습니다.");
-        }
+        
+        System.out.println("[" + result2[0] + ", " + result2[1] + "]");
     }
 }
